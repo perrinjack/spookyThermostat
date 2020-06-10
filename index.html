@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script src="thermostat.js"></script>
     <style>
     </style>
   </head>
 
   <body>
     <center>
-    <h1>Welcome to your e-thermostat</h1>
-      <h2>Current temperature is 'thermostat.temperature'</h2>
-        <form>
-          <input type="button" name="up" id="up" value="Up">
-          <input type="button" name="down" id="down" value="Down"><br><br>
-          <input type="button" name="up" id="up" value="Reset"><br><br>
-          <input type="button" name="up" id="up" value="PowerSave Mode On">
-          <input type="button" name="up" id="up" value="PowerSave Mode Off"><br><br>
-          <input type="button" name="up" id="up" value="Current Energy Usage"><br><br>
-        </form>
+      <section>
+            <h1>Welcome to your e-thermostat</h1>
+
+        <h1 id="temperature"></h1>
+        <p>
+          <button id="temperature-up">+</button>
+          <button id="temperature-down">-</button><br><br>
+          <button id="temperature-reset">reset</button><br><br> Status:
+          <i>power saving mode is </i><b><span id="power-saving-status">ON</span></b><br><br>
+          <button id="powersaving-on">PSM on</button>
+          <button id="powersaving-off">PSM off</button>
+        </p>
+      </section> 
       </center>
+      <script src="src/thermostat.js"></script>
   </body>
 </html>
