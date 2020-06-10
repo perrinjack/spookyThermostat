@@ -2,6 +2,7 @@
 <html>
   <head>
     <script src="js/jquery.min.js"></script>
+    <!-- <link rel="stylesheet" href='./public/style.css'> -->
     <script>
       $(document).ready(function() {
       var thermostat = new Thermostat();
@@ -42,14 +43,14 @@
 
         function updateTemperature() {
           $('#temperature').text(thermostat.temperature);
-          if(thermostat.energyUsage() === 'Low Usage') {
+          if(thermostat.energyUsage() === 'low-usage') {
           $('#temperature').css('color', 'green')
-        } else if(thermostat.energyUsage() === 'Medium Usage') {
-          $('#temperature').css('color', 'orange')
+        } else if(thermostat.energyUsage() === 'medium-usage') {
+          $('#temperature').css('color', 'black')
         } else {
           $('#temperature').css('color', 'red')
         }
-        }
+    }
       });
     </script>
   </head>

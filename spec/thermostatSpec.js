@@ -71,7 +71,7 @@ describe('Thermostat', function () {
   describe('energy usage', function () {
 
     it('returns current energy usage', function () {
-      expect(thermostat.energyUsage()).toEqual('Medium Usage');
+      expect(thermostat.energyUsage()).toEqual('medium-usage');
     });
   });
 });
