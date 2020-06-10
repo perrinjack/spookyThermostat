@@ -9,7 +9,7 @@ describe('Thermostat', function () {
   });
 
   it('has a minimum temperature of 10', function () {
-    expect(thermostat._MINIMUM_TEMP).toEqual(10);
+    expect(thermostat._MIN_TEMP).toEqual(10);
   });
 
   describe('up', function () {
