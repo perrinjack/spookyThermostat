@@ -39,7 +39,7 @@ class Thermostat {
     this.powerSaveMode = true;
     console.log("PowerSave Mode Activated")
   }
-  resetTemperature() {
+  reset() {
     this.temperature = 20;
     console.log("Temperature Reset")
   }
@@ -48,5 +48,6 @@ class Thermostat {
     else if (this.temperature > 25) { return 'High Usage' ; }
     else { return 'Medium Usage' ; }
   }
+
 
 }
