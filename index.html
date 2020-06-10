@@ -10,8 +10,12 @@
           thermostat.up();
           updateTemperature();
         });
+        $('#temperature-down').click(function() {
+          thermostat.down();
+          updateTemperature();
+        });
         function updateTemperature() {
-        $('#temperature').text(thermostat.temperature);
+          $('#temperature').text(thermostat.temperature);
         };
       });
     </script>
