@@ -9,3 +9,12 @@
 .high-usage {
   color: red;
 }
+
+h1 , h2 , h3, p, div {
+  text-align: center;
+  align-items: center;
+  font-family: 'Metal Mania', cursive;
+}
+
+
+

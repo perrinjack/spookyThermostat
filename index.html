@@ -4,40 +4,33 @@
     <script src="js/jquery.min.js"></script>
     <script src="interface.js"></script>
     <script src="src/thermostat.js"></script>
-    <script> 
-    
-    
-  
+    <script>
+      <link
+       href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet">
+      
+      </link>
     </script>
-    <link href='./public/style.css' rel='stylesheet'>
+    <link href="./public/style.css" rel="stylesheet" />
   </head>
   <body>
-    <center>
-      <section>
-          <h1>Welcome to your e-thermostat.</h1>
-        <h3>The weather outside is:
-        </h3>
-        <h2 id="getLocalTemperature">
-        </h2>
-        <h3>Your thermostat is set to:
-        </h3>
-        <h2 id="temperature"></h2>
-        <p>
-          <input type='text' id='location' value="London"/><br>
-          <button id="updateWeather">Get weather!</button><br><br>
-          <button id="temperature-up">+</button>
-          <button id="temperature-down">-</button><br><br>
-          <div id='div1'><button id="temperature-reset">reset</button></div><br><br> Status:
-          <i>power saving mode is </i><b><span id="power-saving-status">ON</span></b><br><br>
-          <button id="powersaving-on">PSM on</button>
-          <button id="powersaving-off">PSM off</button>
-        </p>
-      </section> 
-      </center>
+    <section>
+      <h1>Welcome to your e-thermostat.</h1>
+      <h3>The weather outside is:</h3>
+      <h2 id="getLocalTemperature">N/A</h2>
+      <h3>Your thermostat is set to:</h3>
+      <h2 id="temperature"></h2>
+      <p>
+        <input type="text" id="location" value="London" /><br />
+        <button id="updateWeather">Get weather!</button><br /><br />
+        <button id="temperature-up">+</button>
+        <button id="temperature-down">-</button><br /><br />
+        <button id="temperature-reset">reset</button><br /><br />
+        Status: <i>power saving mode is </i
+        ><b><span id="power-saving-status">ON</span></b
+        ><br /><br />
+        <button id="powersaving-on">PSM on</button>
+        <button id="powersaving-off">PSM off</button>
+      </p>
+    </section>
   </body>
 </html>
-
-
-
-
-
